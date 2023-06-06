@@ -1,0 +1,175 @@
+@font-face
+{
+ font-family: "nunito";
+ src: url("./font/Nunito-Regular.ttf");
+}
+
+*
+{
+  padding: 0;
+  margin: 0;
+  font-family: nunito;
+}
+body
+{
+  background: #f4fbff;
+}
+
+.userInput
+{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 1em;
+}
+.input
+{
+  height: 25px;
+  outline: none;
+  padding: 5px;
+  font-size: 1rem;
+  border-radius: 20px;
+  border: none;
+  box-shadow: inset 5px 0px 10px rgba(0,0,0,0.15);
+  padding-left: 10px;
+  color: gray;
+}
+.enterButton
+{
+  width: 75px;
+  height: 35px;
+  border: none;
+  background: linear-gradient(to right, #3a1dff, #871fff);
+  color: white;
+  border-radius: 10px;
+  box-shadow:inset -8px -8px 12px 0 rgba(0,0,0,0.25),
+  inset 12px 12px 16px 0 rgba(255,255,255,0.1);
+  transition: .5s;
+}
+.enterButton:active
+{
+  background: linear-gradient(to right, #d2d2d2, #878787);
+  transition: 1s;
+}
+
+
+/* TO DO LIST */
+.list
+{
+  list-style: none;
+  margin-top: 2em;
+  width: 100%;
+  height: 65vh;
+  border-radius: 20px;
+  overflow-y: scroll;
+}
+.list::-webkit-scrollbar-track {
+  background: red;
+}
+.list li div
+{
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+.done
+{
+  color: #e3e3e3;
+}
+.done::after
+{
+  content: '✅';
+  position: relative;
+}
+.ilang
+{
+  transition: 1s;
+  opacity: 0;
+  transform: translateX(-100px);
+}
+.listItem
+{
+  width: 90%;
+  height: auto;
+  background-color: white;
+  margin: 0 auto;
+  list-style: none;
+  display: flex;
+ /* justify-content: center;*/
+  align-items: center;
+  gap: 1em;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 12px 12px 16px 0 rgba(0,0,0,0.25),
+  -8px -8px 12px 0 rgba(255,255,255,0.1);
+  transition: 1s;
+  margin-top: 1em;
+  transform: translateX(-100px);
+}
+.listItem .text
+{
+  width: 150%;
+}
+.containerButton
+{
+  height: auto;
+  display: flex;
+  gap: 1em;
+  width: 100%;
+  justify-content: flex-end;
+}
+.containerButton button
+{
+  width: 40px;
+  height: 40px;
+  font-size: 1rem;
+  background: var(--bg);
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  box-shadow:inset -8px -8px 12px 0 rgba(0,0,0,0.25),
+  inset 12px 12px 16px 0 rgba(255,255,255,0.1);
+}
+.containerButton button:nth-child(1)
+{
+  background: linear-gradient(to left top, #78ff23, #08d900);
+}
+.containerButton button:nth-child(2)
+{
+  display: none;
+  background: linear-gradient(to left top, #28d3ff, #2078ff);
+}
+.containerButton button:nth-child(3)
+{
+  background: linear-gradient(to left top, #ff782b, #ff0808);
+}
+.textContent
+{
+  outline: none;
+  font-weight: bold;
+}
+content
+{
+  width: 100%;
+  height: 300px;
+  background: blue;
+  overflow: scroll;
+  border: 2px solid red;
+}
+
+footer
+{
+  color: gray;
+  font-size: 0.9rem;
+  position: relative;
+  width: 100%;
+  bottom: 15%;
+}
+footer div
+{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
